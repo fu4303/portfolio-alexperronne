@@ -1,0 +1,68 @@
+{
+  "name": "alexperronnet.io",
+  "version": "0.0.0",
+  "description": "Alex Perronnet Personal Website",
+  "author": "Alex Perronnet <alex@alexperronnet.io>",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "start": "npm run develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+  },
+  "babelMacros": {
+    "twin": {
+      "styled": {
+        "import": "default",
+        "from": "@emotion/styled"
+      },
+      "css": {
+        "import": "css",
+        "from": "@emotion/react"
+      },
+      "global": {
+        "import": "Global",
+        "from": "@emotion/react"
+      },
+      "config": "tailwind.config.js",
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
+    "@material-ui/core": "^4.11.0",
+    "copy-to-clipboard": "^3.3.1",
+    "gatsby": "^2.27.0",
+    "gatsby-image": "^2.6.0",
+    "gatsby-plugin-canonical-urls": "^2.5.0",
+    "gatsby-plugin-google-analytics": "^2.6.0",
+    "gatsby-plugin-manifest": "^2.7.0",
+    "gatsby-plugin-netlify": "^2.6.0",
+    "gatsby-plugin-offline": "^3.5.0",
+    "gatsby-plugin-react-helmet": "^3.5.0",
+    "gatsby-plugin-robots-txt": "^1.5.3",
+    "gatsby-plugin-sharp": "^2.9.0",
+    "gatsby-plugin-sitemap": "^2.7.0",
+    "gatsby-source-filesystem": "^2.6.1",
+    "gatsby-transformer-sharp": "^2.7.0",
+    "parallax-js": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-tilt": "^0.1.4",
+    "twin.macro": "^1.12.1",
+    "typeface-fira-sans": "^1.1.13",
+    "use-sound": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
+    "@upstatement/eslint-config": "^0.4.3",
+    "@upstatement/prettier-config": "^0.3.0",
+    "prettier": "^2.2.0"
+  }
+}
