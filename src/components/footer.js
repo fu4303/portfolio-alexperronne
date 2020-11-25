@@ -15,7 +15,7 @@ export const Footer = () => {
         <Hidden>
           <Settings />
         </Hidden>
-        <StyledLink href="https://github.com/alexperronnet/alexperronnet.io" onMouseEnter={playPop}>
+        <StyledLink href="https://github.com/alexperronnet/personal-website-v2" onMouseEnter={playPop}>
           Designed &amp; Built by Alex Perronnet
         </StyledLink>
       </FlexCol>

@@ -52,7 +52,7 @@ export const projects = [
     links: [
       {
         label: "Github",
-        url: "https://github.com/alexperronnet/alexperronnet.io"
+        url: "https://github.com/alexperronnet/personal-website-v2"
       },
       {
         label: "Figma",
