@@ -48,7 +48,7 @@ gatsby clean
 | background secondary | ![#F3F4F6](https://via.placeholder.com/10/F3F4F6?text=+) `#F3F4F6` |
 | text primary         | ![#4B5563](https://via.placeholder.com/10/4B5563?text=+) `#4B5563` |
 | text secondary       | ![#1F2937](https://via.placeholder.com/10/1F2937?text=+) `#1F2937` |
-| color primary        | ![#DB2777](https://via.placeholder.com/10/DB2777?text=+) `#DB2777` |
+| color primary        | ![#DB2777](https://via.placeholder.com/10/C026D3?text=+) `#C026D3` |
 | color success        | ![#16A34A](https://via.placeholder.com/10/16A34A?text=+) `#16A34A` |
 | color warning        | ![#CA8A04](https://via.placeholder.com/10/CA8A04?text=+) `#CA8A04` |
 | color danger         | ![#DC2626](https://via.placeholder.com/10/0a192f?text=+) `#DC2626` |
@@ -57,11 +57,11 @@ gatsby clean
 
 | Color For            | Hex                                                                |
 | -------------------- | ------------------------------------------------------------------ |
-| background primary   | ![#111827](https://via.placeholder.com/10/111827?text=+) `#111827` |
-| background secondary | ![#1F2937](https://via.placeholder.com/10/1F2937?text=+) `#1F2937` |
+| background primary   | ![#111827](https://via.placeholder.com/10/1F2937?text=+) `#1F2937` |
+| background secondary | ![#1F2937](https://via.placeholder.com/10/111827?text=+) `#111827` |
 | text primary         | ![#D1D5DB](https://via.placeholder.com/10/D1D5DB?text=+) `#D1D5DB` |
 | text secondary       | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) `#FFFFFF` |
-| color primary        | ![#A855F7](https://via.placeholder.com/10/A855F7?text=+) `#A855F7` |
+| color primary        | ![#A855F7](https://via.placeholder.com/10/3B82F6?text=+) `#3B82F6` |
 | color success        | ![#22C55E](https://via.placeholder.com/10/22C55E?text=+) `#22C55E` |
 | color warning        | ![#EAB308](https://via.placeholder.com/10/EAB308?text=+) `#EAB308` |
 | color danger         | ![#EF4444](https://via.placeholder.com/10/EF4444?text=+) `#EF4444` |
