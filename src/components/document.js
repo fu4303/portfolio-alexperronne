@@ -1,11 +1,12 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+
 import { useSettings } from "@context"
 import { useInactiveTab, useOutbound } from "@hooks"
 
 export const Document = ({ title }) => {
-  const data = useStaticQuery(graphql `
+  const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -20,11 +21,11 @@ export const Document = ({ title }) => {
 
   const { siteMetadata } = data.site
   const { darkMode } = useSettings()
-  
+
   useInactiveTab()
   useOutbound()
 
-  return ( 
+  return (
     <Helmet
       htmlAttributes={{
         lang: "en",
@@ -33,7 +34,7 @@ export const Document = ({ title }) => {
       titleTemplate={`%s \u2013 ${siteMetadata.title}`}
       title={title}
       defer={false}
-      metas={[
+      meta={[
         {
           name: "description",
           content: siteMetadata.description

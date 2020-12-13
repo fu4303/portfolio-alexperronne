@@ -43,7 +43,7 @@ gatsby clean
 #### Light
 
 | Color For            | Hex                                                                |
-|----------------------|--------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------------ |
 | background primary   | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) `#FFFFFF` |
 | background secondary | ![#F3F4F6](https://via.placeholder.com/10/F3F4F6?text=+) `#F3F4F6` |
 | text primary         | ![#4B5563](https://via.placeholder.com/10/4B5563?text=+) `#4B5563` |
@@ -56,7 +56,7 @@ gatsby clean
 #### Dark
 
 | Color For            | Hex                                                                |
-|----------------------|--------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------------ |
 | background primary   | ![#111827](https://via.placeholder.com/10/111827?text=+) `#111827` |
 | background secondary | ![#1F2937](https://via.placeholder.com/10/1F2937?text=+) `#1F2937` |
 | text primary         | ![#D1D5DB](https://via.placeholder.com/10/D1D5DB?text=+) `#D1D5DB` |

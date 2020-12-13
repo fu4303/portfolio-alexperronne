@@ -1,5 +1,6 @@
 import React from "react"
 import tw from "twin.macro"
+
 import { useSfx } from "@hooks"
 import { useSettings } from "@context"
 import { Icon, CustomTooltip } from "@components"
@@ -7,7 +8,7 @@ import { Icon, CustomTooltip } from "@components"
 export const Settings = () => {
   const { darkMode, toggleDarkMode, soundEnabled, toggleSound } = useSettings()
   const { playSoundOn, playSoundOff, playSwitchOn, playSwitchOff } = useSfx()
-  
+
   return (
     <StyledSettings>
       <Button

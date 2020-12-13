@@ -1,6 +1,15 @@
 const path = require("path")
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ getConfig, stage, actions }) => {
+  const config = getConfig()
+
+  if (stage.startsWith("develop") && config.resolve) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "react-dom": "@hot-loader/react-dom"
+    }
+  }
+
   actions.setWebpackConfig({
     resolve: {
       alias: {

@@ -1,5 +1,6 @@
 import React from "react"
 import tw, { styled } from "twin.macro"
+
 import { mixins } from "@styles"
 import { socials } from "@data"
 import { useSfx } from "@hooks"
@@ -15,13 +16,20 @@ export const Footer = () => {
         <Hidden>
           <Settings />
         </Hidden>
-        <StyledLink href="https://github.com/alexperronnet/personal-website-v2" onMouseEnter={playPop}>
+        <StyledLink
+          href="https://github.com/alexperronnet/personal-website-v2"
+          onMouseEnter={playPop}
+        >
           Designed &amp; Built by Alex Perronnet
         </StyledLink>
       </FlexCol>
       <SocialList>
         {socials.map(social => (
-          <CustomTooltip key={social.title} title={social.title} placement="top">
+          <CustomTooltip
+            key={social.title}
+            title={social.title}
+            placement="top"
+          >
             <SocialButton
               href={social.url}
               onMouseEnter={playPlunger}
@@ -37,21 +45,21 @@ export const Footer = () => {
 }
 
 const StyledLink = styled.a`
-  ${[mixins.link.underline, tw `text-secondary text-sm`]}
+  ${[mixins.link.underline, tw`text-secondary text-sm`]}
 `
 
 const FlexCol = tw.div`flex flex-col sm:space-y-5`
 
 const Hidden = tw.div`hidden sm:block`
 
-const StyledFooter = tw.footer`py-12 flex flex-col-reverse sm:flex-row space-y-8 sm:space-y-0 space-y-reverse sm:justify-between items-center border-t-2 border-primary`
+const StyledFooter = tw.footer`py-8 sm:py-10 flex flex-col-reverse sm:flex-row space-y-8 sm:space-y-0 space-y-reverse sm:justify-between items-center border-t-2 border-primary`
 
 const SocialList = tw.div`flex space-x-5`
 
 const SocialButton = styled.a`
-  ${tw `bg-secondary p-3 sm:p-4 rounded-full transform hover:-translate-y-1 hover:text-tertiary duration-200`}
+  ${tw`bg-secondary p-3 sm:p-4 rounded-full transform hover:-translate-y-1 hover:text-tertiary duration-200`}
 
   svg {
-    ${tw `w-4 h-4`}
+    ${tw`w-4 h-4`}
   }
 `

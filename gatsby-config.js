@@ -1,22 +1,17 @@
-const siteConfig = {
-  name: "Alex Perronnet",
-  author: "@alexperronnet",
-  url: "https://alexperronnet.io",
-  gaTrackingId: "UA-156157580-2",
-  description: "I am Alex Perronnet, a french freelance developer and designer. I am also an open-source contributor and a content creator"
-}
+const site = require(`${__dirname}/config/website`)
 
 module.exports = {
   siteMetadata: {
-    title: siteConfig.name,
-    author: siteConfig.author,
-    siteUrl: siteConfig.url,
-    description: siteConfig.description
+    title: site.name,
+    author: site.author,
+    siteUrl: site.url,
+    description: site.description
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-emotion",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
@@ -30,8 +25,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: siteConfig.name,
-        short_name: siteConfig.name,
+        name: site.name,
+        short_name: site.name,
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#ffffff",
@@ -45,24 +40,26 @@ module.exports = {
     {
       resolve: "gatsby-plugin-canonical-urls",
       options: {
-        siteUrl: siteConfig.url
+        siteUrl: site.url
       }
     },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: siteConfig.gaTrackingId
+        trackingId: site.gaTrackingId
       }
     },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: siteConfig.url,
-        sitemap: `${siteConfig.url}/sitemap.xml`,
-        policy: [{
-          userAgent: "*",
-          allow: "/"
-        }]
+        host: site.url,
+        sitemap: `${site.url}/sitemap.xml`,
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/"
+          }
+        ]
       }
     }
   ]

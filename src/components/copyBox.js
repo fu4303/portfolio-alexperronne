@@ -1,12 +1,13 @@
 import React from "react"
 import copy from "copy-to-clipboard"
 import tw from "twin.macro"
+
 import { useSfx } from "@hooks"
 import { logCopy } from "@utils"
 import { Icon, CustomTooltip } from "@components"
 
 export const CopyBox = ({ value }) => {
-  const [ isCopied, setCopied ] = React.useState(false)
+  const [isCopied, setCopied] = React.useState(false)
   const { playPlunger, playAirhorn } = useSfx()
 
   React.useEffect(() => {
@@ -31,12 +32,14 @@ export const CopyBox = ({ value }) => {
             logCopy("Copy email")
           }}
         >
-          {isCopied ? <Icon color="success" name="check" /> : <Icon name="fileCopy" />}
+          {isCopied ? (
+            <Icon color="success" name="check" />
+          ) : (
+            <Icon name="fileCopy" />
+          )}
         </ButtonCopy>
       </CustomTooltip>
-      <Placeholder>
-        {value}
-      </Placeholder>
+      <Placeholder>{value}</Placeholder>
     </Box>
   )
 }

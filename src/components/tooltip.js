@@ -6,9 +6,9 @@ import { StylesProvider } from "@material-ui/core/styles"
 const StyledTooltip = styled(({ className, ...other }) => (
   <Tooltip classes={{ tooltip: className }} {...other} />
 ))`
-  ${tw `bg-tertiary text-white text-xs rounded-sm`}
+  ${tw`bg-tertiary text-white text-xs rounded-sm`}
 `
-export const CustomTooltip = (props) => (
+export const CustomTooltip = props => (
   <StylesProvider injectFirst>
     <StyledTooltip {...props} />
   </StylesProvider>

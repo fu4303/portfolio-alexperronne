@@ -1,7 +1,7 @@
 import React from "react"
 import Parallax from "parallax-js"
 
-export const UseParallax = (props) => {
+export const UseParallax = props => {
   const parallaxRef = React.useRef(null)
   const [parallax, setParallax] = React.useState(null)
 

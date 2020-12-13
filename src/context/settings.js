@@ -32,7 +32,7 @@ export const useSettings = () => {
     localStorageKey,
     setValue,
     value,
-    fallbackValue,
+    fallbackValue
   }) => {
     if (typeof value !== "undefined") return
 
@@ -65,12 +65,7 @@ export const useSettings = () => {
       value: darkMode,
       fallbackValue: window.matchMedia("(prefers-color-scheme: dark)").matches
     })
-  }, [
-    darkMode,
-    setDarkMode,
-    soundEnabled,
-    setSoundEnabled,
-  ])
+  }, [darkMode, setDarkMode, soundEnabled, setSoundEnabled])
 
   const toggleDarkMode = () => {
     const newMode = !darkMode

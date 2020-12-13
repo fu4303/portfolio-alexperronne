@@ -1,6 +1,7 @@
 import React from "react"
 import Tilt from "react-tilt"
 import tw, { styled } from "twin.macro"
+
 import { mixins } from "@styles"
 import { projects } from "@data"
 import { useSfx } from "@hooks"
@@ -10,9 +11,7 @@ export const Projects = () => {
 
   return (
     <StyledSection>
-      <Title>
-        Projects
-      </Title>
+      <Title>Projects</Title>
       <ProjectsList>
         {projects.map(project => (
           <Tilt
@@ -24,12 +23,10 @@ export const Projects = () => {
             }}
           >
             <ProjectItem onMouseEnter={playPlunger}>
-              <ProjectTitle>
-                {project.title}
-              </ProjectTitle>
+              <ProjectTitle>{project.title}</ProjectTitle>
               <p>{project.description}</p>
               <ProjectLinks>
-                {project.links.map(link =>(
+                {project.links.map(link => (
                   <StyledLink
                     key={link.label}
                     href={link.url}
@@ -41,9 +38,7 @@ export const Projects = () => {
               </ProjectLinks>
               <BadgesList>
                 {project.badges.map(badge => (
-                  <Badge key={badge.title}>
-                    {badge.title}
-                  </Badge>
+                  <Badge key={badge.title}>{badge.title}</Badge>
                 ))}
               </BadgesList>
             </ProjectItem>
@@ -70,12 +65,12 @@ const ProjectLinks = tw.div`flex items-center space-x-5`
 
 const StyledLink = styled.a`
   ${mixins.link.underline}
-  ${tw `text-base text-tertiary`}
+  ${tw`text-base text-tertiary`}
 `
 
 const BadgesList = tw.div`flex space-x-3 overflow-auto`
 
 const Badge = styled.span`
-  ${tw `px-2 py-1 font-medium text-xs text-tertiary whitespace-no-wrap cursor-not-allowed rounded`}
+  ${tw`px-2 py-1 font-medium text-xs text-tertiary whitespace-nowrap cursor-not-allowed rounded`}
   background-color: rgba(var(--color-primary-rgb), .1);
 `

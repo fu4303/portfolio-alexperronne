@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import tw, { styled } from "twin.macro"
+
 import { useSfx } from "@hooks"
 import { mixins } from "@styles"
 import { Status, Settings, Button } from "@components"
@@ -34,13 +35,13 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
-  ${tw `flex justify-between items-center py-12 border-b-2 border-primary`}
+  ${tw`flex justify-between items-center py-8 sm:py-10 border-b-2 border-primary`}
 `
 
 const Side = styled.div`
-  ${tw `flex space-x-5 items-center`}
+  ${tw`flex space-x-5 items-center`}
 `
 
 const StyledLink = styled(Link)`
-  ${[mixins.link.underline, tw `sm:text-xl text-secondary font-bold uppercase`]}
+  ${[mixins.link.underline, tw`sm:text-xl text-secondary font-bold uppercase`]}
 `

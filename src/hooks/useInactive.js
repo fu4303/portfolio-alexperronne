@@ -4,11 +4,11 @@ export const useInactiveTab = () => {
   React.useEffect(() => {
     const pageTitle = document.title
     const inactiveMessage = "😔 Come Back..."
-  
-    document.addEventListener("visibilitychange", function(e) {
+
+    document.addEventListener("visibilitychange", function (e) {
       const isPageActive = !document.hidden
-  
-      if(!isPageActive){
+
+      if (!isPageActive) {
         document.title = inactiveMessage
       } else {
         document.title = pageTitle

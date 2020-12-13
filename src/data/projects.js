@@ -1,7 +1,8 @@
 export const projects = [
   {
     title: "Devfont Icons",
-    description: "Devfont is a premium, simply and beautiful set of 550+ open source icons for designers and developers.",
+    description:
+      "Devfont is a premium, simply and beautiful set of 550+ open source icons for designers and developers.",
     links: [
       {
         label: "Github",
@@ -9,7 +10,8 @@ export const projects = [
       },
       {
         label: "Figma",
-        url: "https://www.figma.com/file/jWkpj44WJyzgDIxyo1h2sv/devfont-icons-design?node-id=0%3A1"
+        url:
+          "https://www.figma.com/file/6UxYVimMRFLHuyPXBlxkkj/devfont-icons?node-id=4%3A154"
       },
       {
         label: "Search",
@@ -26,7 +28,8 @@ export const projects = [
   },
   {
     title: "Devfont Website",
-    description: "The official website viewer of Devfont Icons for search, download and copy/paste as SVG fastly.",
+    description:
+      "The official website viewer of Devfont Icons for search, download and copy/paste as SVG fastly.",
     links: [
       {
         label: "Github",
@@ -43,12 +46,15 @@ export const projects = [
       { title: "React" },
       { title: "Gatsby" },
       { title: "Tailwind" },
+      { title: "EmotionJS" },
+      { title: "React Virtualized" },
       { title: "Fusejs" }
     ]
   },
   {
     title: "Personal Website",
-    description: "The Personal Website of Alex Perronnet. Built with a lot of love.",
+    description:
+      "The Personal Website of Alex Perronnet. Built with a lot of love.",
     links: [
       {
         label: "Github",
@@ -56,7 +62,8 @@ export const projects = [
       },
       {
         label: "Figma",
-        url: "https://www.figma.com/file/xhmtkKXirY6zL4L0eM3LWs/alexperronnet.io?node-id=0%3A1"
+        url:
+          "https://www.figma.com/file/xhmtkKXirY6zL4L0eM3LWs/alexperronnet.io?node-id=0%3A1"
       },
       {
         label: "Demo",
@@ -69,14 +76,15 @@ export const projects = [
       { title: "React" },
       { title: "Gatsby" },
       { title: "Tailwind" },
-      { title: "Emotion" },
+      { title: "EmotionJS" },
       { title: "Dark Mode" },
       { title: "Sound Mode" }
     ]
   },
   {
     title: "Spectrum Theme for VS Code",
-    description: "Spectrum theme is an elegant and juicy dark theme with awesomes colors for VS Code.",
+    description:
+      "Spectrum theme is an elegant and juicy dark theme with awesomes colors for VS Code.",
     links: [
       {
         label: "Github",
@@ -84,7 +92,8 @@ export const projects = [
       },
       {
         label: "Marketplace",
-        url: "https://marketplace.visualstudio.com/items?itemName=alexperronnet.spectrum-vscode-theme"
+        url:
+          "https://marketplace.visualstudio.com/items?itemName=alexperronnet.spectrum-vscode-theme"
       }
     ],
     badges: [
@@ -96,7 +105,8 @@ export const projects = [
   },
   {
     title: "Spectrum Icons for VS Code",
-    description: "Spectrum icons is an elegant and minimal light/dark low contrast file icon set for VS Code. Fully based on Devfont.",
+    description:
+      "Spectrum icons is an elegant and minimal light/dark low contrast file icon set for VS Code. Fully based on Devfont.",
     links: [
       {
         label: "Github",
@@ -104,7 +114,8 @@ export const projects = [
       },
       {
         label: "Marketplace",
-        url: "https://marketplace.visualstudio.com/items?itemName=alexperronnet.spectrum-vscode-icons"
+        url:
+          "https://marketplace.visualstudio.com/items?itemName=alexperronnet.spectrum-vscode-icons"
       }
     ],
     badges: [
@@ -116,7 +127,8 @@ export const projects = [
   },
   {
     title: "Spectrum Theme Website",
-    description: "The official website of Spectrum Theme and Spectrum Icons for VS Code.",
+    description:
+      "The official website of Spectrum Theme and Spectrum Icons for VS Code.",
     links: [
       {
         label: "Github",

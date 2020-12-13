@@ -1,16 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import tw from "twin.macro"
+
 import { Button } from "@components"
 
 export const Error = () => (
   <StyledSection>
-    <Title>
-      404 &mdash; Page Not Found
-    </Title>
-    <Text>
-      This is one-page website. How did you get there?
-    </Text>
+    <Title>404 &mdash; Page Not Found</Title>
+    <Text>This is one-page website. How did you get there?</Text>
     <Flex>
       <Button as={Link} to="/" icon="home">
         Back To Safety

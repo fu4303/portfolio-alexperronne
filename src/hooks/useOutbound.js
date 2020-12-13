@@ -12,7 +12,7 @@ export const useOutbound = () => {
       })
     }
   }
-  
+
   React.useEffect(() => {
     handleOutbound()
   }, [])

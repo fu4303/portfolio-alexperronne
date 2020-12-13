@@ -1,7 +1,7 @@
 import React from "react"
-import { SettingsProvider } from "@context"
+import "typeface-roboto"
 
-import "typeface-fira-sans"
+import { SettingsProvider } from "@context"
 
 console.log(
   "%cHELLO FRIENDS, WHY ARE U THERE?",
@@ -15,7 +15,5 @@ console.log(
 )
 
 export const wrapRootElement = ({ element }) => (
-  <SettingsProvider>
-    {element}
-  </SettingsProvider>
+  <SettingsProvider>{element}</SettingsProvider>
 )
