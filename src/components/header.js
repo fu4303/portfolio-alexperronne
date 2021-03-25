@@ -23,7 +23,7 @@ export const Header = () => {
         <Settings />
         <Button
           as="a"
-          href="mailto:alex@alexperronnet.io"
+          href="mailto:me@alexperronnet.io"
           icon="atSign"
           visibility="smallOnMobile"
         >
