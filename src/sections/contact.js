@@ -26,13 +26,13 @@ export const Contact = () => {
         I am open to lots of new opportunities, freelance or a fulltime
         position. You can contact me by trying to send a homing pigeon but
         honestly the best is still to send me an {""}
-        <StyledLink href="mailto:me@alexperronnet.io" onMouseEnter={playPop}>
+        <StyledLink href="mailto:aperronnet.pro@gmail.com" onMouseEnter={playPop}>
           email
         </StyledLink>
         .
       </p>
       <FlexCopy>
-        <CopyBox value="me@alexperronnet.io" />
+        <CopyBox value="aperronnet.pro@gmail.com" />
         <CopyBox value="@alexperronnet" />
       </FlexCopy>
       <CustomTooltip title="BTW it's better than scroll" placement="top">
