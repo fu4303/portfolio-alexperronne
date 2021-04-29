@@ -2,7 +2,7 @@
   "name": "alexperronnet.io",
   "version": "0.0.0",
   "description": "Alex Perronnet Personal Website",
-  "author": "Alex Perronnet <me@alexperronnet.io>",
+  "author": "Alex Perronnet <aperronnet.pro@gmail.com>",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop -H 0.0.0.0 -p 8000",
